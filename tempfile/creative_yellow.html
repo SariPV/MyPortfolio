@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    
+
+    <meta name="HandheldFriendly" content="true">
+    <title>professional resume</title>
+    <!-- <link rel = "stylesheet" type="text/css" href="creative3.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+/* html { font-size:100%; }  */
+/* *{
+    
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+
+} */
+/* @font-face {
+    font-family: "Lato";
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+} */
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter-Regular.ttf);
+    src: url(./font/Inter-Bold.ttf);
+    src: url(./font/Inter-Light.ttf);
+  
+}      
+@font-face {
+    font-family: faregular;
+    src: url(font/fa-regular-400.ttf);
+    } 
+
+    @font-face {
+    font-family: fasolid;
+    src: url(font/fa-solid-900.ttf);
+    } 
+body{
+    margin:0;
+    padding:0;
+    background: #F2C544;
+    list-style: none;
+    font-family: 'inter';
+    
+}
+/*@media only screen and (max-width: 740px) {
+    h1 { font-size: 4.5em; }
+    h3 { font-size: 2.2em; }
+    h2 { display: block; text-align: center; }
+
+    
+    #w { padding: 20px 15px; }
+    p { padding: 0; }
+}
+
+@media only screen and (max-width: 570px) {
+    ul li {
+      display: inline-block; 
+      padding-left: 15px; 
+      width: 140px; 
+      background-position: -5px 0px;
+      margin-right: 6px; 
+      line-height: 1.7em;
+    }
+    #skills-left, skills-right { margin-bottom: 15px; }
+}
+@media only screen and (max-width: 480px) {
+    ul li { width: 120px; }
+    #w { margin: 0 20px; }
+}
+   
+@media only screen and (max-width: 320px) {
+    #w { margin: 0 10px; }
+}
+  */ 
+  /** iPhone only **/
+/*@media screen and (max-device-width: 480px) {
+    ul li { width: 150px; }
+}
+@media screen and (max-width: 800px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+/*@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+*/
+
+/*@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+.wrapper{
+    
+    
+    font-family: 'inter';
+    /* width: 100%; */
+    margin: 50px auto;
+    background: #F2C544;
+    padding: 15px;
+    width: 800px;
+    overflow: hidden;
+    list-style: none;
+    
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    
+    
+  
+}
+.container-2{
+    display: flex;
+    width: 100%;
+    /* margin: 50px auto; */
+    
+ 
+    
+    
+    
+  
+}
+.head {
+	position: relative;
+    width: 600px;
+    margin-top: 10px;
+    
+    
+}
+.head .head-right {
+   
+	
+	position: relative;
+    margin-top: 10px;
+    float: right;
+    width: 50%;
+    
+   
+    
+}
+.head-right .name{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 33px;
+    font-style: normal;
+    align-items:flex-end;
+    text-transform: uppercase;
+ 
+}
+.head-right .role{
+    color: #235789;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 5%;
+    text-transform: uppercase;
+    
+
+}
+
+
+.head .head-left {
+	position: relative;
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+
+}
+.head-left .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-left: 15%;
+
+}
+
+.head-left .img img{
+    position: relative;
+    /* top:-60px;
+    left: 20px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.head-left .box {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black; 
+    position: relative;
+    margin-top: -165px;
+    margin-left: -95px;
+    border-top-left-radius: 2% 0%;
+    border-top-right-radius: 90% 100%;
+    border-bottom-right-radius: 100% 80%;
+    border-bottom-left-radius: 70% 90%;
+    background-color: #ff9b5f;
+    background-image: linear-gradient(
+19deg
+, #ff9b5f 0%, #ff9b5f 100%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+
+.container-2 .left_Side{
+    position: relative;
+    width: 50%;
+    /* margin: 15px; */
+    float: left;
+    /* margin-top:-230px; */
+    margin-top: -150px;
+}
+.left_Side .blob1 {
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    border-top-left-radius: 90px 80px;
+    border-top-right-radius: 160px 180px;
+    border-bottom-right-radius: 130px 119px;
+    border-bottom-left-radius: 190px 191px;
+    background-color: #c70039;
+    background-image: linear-gradient( 
+19deg
+ , #c70039 0%, #c70039 100%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    /* right: 100px;
+    top: 400px; */
+}
+
+.container-2 .right_Side{
+    position: relative;
+    width: 50%;  
+    float: right;
+    /* margin-top: -300px; */
+
+}
+.right_Side .blob{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    border-top-left-radius: 70% 100%;
+    border-top-right-radius: 100% 90%;
+    border-bottom-right-radius: 90% 50%;
+    border-bottom-left-radius: 100% 91%;
+    background-color: #5f9ea0;
+    background-image: linear-gradient( 
+19deg
+ , #5f9ea0 0%, #5f9ea0 100%);
+    /* margin-top:-150px; */
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    /* left: 100px; */
+    
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #235789;
+    margin-left: 0;
+    
+    position: relative;
+}
+
+.about .box{
+    display: block;
+    position: relative;
+    color: #000000;
+    margin-bottom: 5%;
+   
+
+    
+
+}
+ul{
+
+    padding: 0;
+}
+.about .box .company{
+    font-weight: bold;
+    font-size: 12px;
+    width: 50%;
+    float: left;
+}
+.about .box .position{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.about .box .text li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display:contents;
+    list-style: none;
+}
+.about .box .year{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color:  rgb(255, 255, 255);
+    text-transform: uppercase;
+    float: right;
+    /* padding-right: 40px; */
+    width: 50%;
+}
+.Achievements .box {
+    display: block;
+    position: relative;
+    color: #000000;
+    margin-bottom: 5%;
+    
+}
+.Achievements .box .year_achieve{
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.Achievements .box .text{
+    font-size: 12px;
+    font-weight: 500;
+}
+.education ul li{
+    display: block;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    
+   
+}
+.education{
+    position: relative;
+    /* margin-top: 10px; */
+}
+
+
+h3{
+   font-size: 13px;
+   color: #000000;
+   margin: 0;
+}
+h5{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    
+}
+h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:  rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin:0;
+}
+.skills{
+    padding-top: 50px;
+    margin-left: 0;
+}
+
+.skills .box{
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.skills .box ul li{
+    position:relative;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    /*list-style:circle inside;*/
+  
+   
+
+    
+
+}
+.skills .box li{
+   background-image: url(star.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin: 0;
+	padding: 0 0 3px 30px;
+}
+
+.references {
+    margin-top: 5%;
+    color: #000000;
+ 
+}
+
+
+.references ul{
+    position: relative;
+    display: block;
+    padding-bottom: 5%;
+    list-style: none;
+    
+}
+
+.references .ul .li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+
+}
+    
+.references ul li span {
+    font-weight: 500;
+    font-size: 12px;
+    display:contents;
+
+}
+
+.references .text-dark{
+    font-weight: bold;
+    
+}
+.references .role{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 15px;
+    display: block;
+}
+
+.contactinfo{
+    position: relative;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style:none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+.circle-icon {
+    background: #235789;
+    border-radius: 50%;
+    padding: 10px;
+    vertical-align:middle;
+    width: 30px;
+    height: 30px;
+}
+.circle{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    font-size:16px;
+    color:#FFFFFF;
+    line-height:40px;
+    text-align:center;
+    background: #235789;
+    font-family: "fasolid"; 
+    vertical-align: middle;      
+    font-family: "fasolid";   
+    }
+.icon {
+    float: left;
+    width: 20%;
+    font-size: 12px;
+    padding-top: 4px;
+    color: #EEEEEE;
+}
+
+.contactinfo ul li{
+    position: relative;
+    list-style:none;
+
+    cursor: pointer;
+    color: #FFF;
+    display: block;
+
+}
+.contactinfo ul li .icon{
+    position: relative;
+    display: inline-block;
+    color:#FFF;
+    
+}
+.contactinfo ul li .text{
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+ 
+    float: right;
+    width: 70%;
+   
+
+
+}
+
+
+</style>
+<body>
+    <div class="wrapper">
+    
+    <div class="container">
+        
+        <div class="head">
+        <div class="head-right">
+            <div class="name">{UserName}</div>
+            <div class="role">{position}</div>
+
+        </div>
+        
+        <div class="head-left">
+            <div class="box"> <div class="img">
+                <div class="image" style="border-radius:50%;background-image: url('../{MyImage}'); background-size: 600px 600px;background-repeat: no-repeat; width: 200px;height:200px;"></div>
+            </div></div>
+            <!-- <div class="img">
+                <img src="img.jpg">
+            </div> -->
+        </div>
+
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="left_Side">
+           
+            <div class="about">
+                <h2 class="title">Work experiences</h2>
+                <!-- <div class="box">
+                    <div class="year">
+                      2018- Present
+                    </div>
+                    <div class="company">
+                        Company Name
+                    </div>
+                    
+                    <div class="position">Event Photographer</div>
+                    <div class="text">
+                        <li>Selected and set up appropriate props, backdrops and lighting.</li>
+                        <li>Planned and prepared for all on-location and studio shoots.</li>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="year">2016-2018</div>
+                    <div class="company">
+                        Company Name
+                    </div>
+                    <div class="position">
+                        Event Photographer</div>
+                   
+                    <div class="text">
+                        <li>Fabricated camera mounts and cases to capture images and protect equipment.</li>
+                        <li>Shot photographs in controlled lab, field and remote environments.</li>
+                    </div>
+                    
+                </div> -->
+                %experience%
+            </div>
+            
+            <div class="Achievements">
+                <h2 class="title">Achievements</h2>
+                <!-- <div class="box">
+                    <div class="text">
+                        Outstanding Achievement Award
+                    </div>
+                    <div class="year_achieve">
+                        2017
+                    </div>
+                   
+                </div>
+                <div class="box">
+                    <div class="text">
+                        Employee of the Month
+                    </div>
+                    <div class="year_achieve">
+                       2015
+                    </div>
+                    
+                </div> -->
+                %achievement%
+            </div>
+            <div class="blob1">
+            <div class="contactinfo">
+                <h2 class="title">Contact</h2>
+                <ul>
+                    <li>
+                        <div class="icon"><div class="circle">&#xf879</div></div>
+                        <div class="text">{phone}</div>
+                    </li>
+                    <li>
+                        <div class="icon"><div class="circle">&#xf0e0</div></div>
+                        <div class="text">{email}</div>
+                    </li>
+                    <li>
+                        <div class="icon"><div class="circle">&#xf015</div></div>
+                        <div class="text">{address}</div>
+                    </li>
+               
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        
+        <div class="right_Side">
+        
+            
+            <div class="education">
+                <h2 class="title">Education</h2>
+                <!-- <ul>
+                    <li>
+                        
+                        <h3>BA in Hospitality Management</h3>
+                        <h5>Harvard University</h5>
+                        <h6>2012-2016</h6>
+                    </li>
+                    <li>
+        
+                        <h3>High school</h3>
+                        <h5>Dripping Springs High School</h5>
+                        <h6>2009-2012</h6>
+                    </li>
+                    <li>
+                        
+                        <h3>Middle school</h3>
+                        <h5>Sycamore Springs Middle School</h5>
+                        <h6>2006-2012</h6>
+                    </li>
+                    
+               
+                </ul> -->
+                %education%
+            </div>
+            <div class="blob">
+            <div class="skills">
+                <h2 class="title">Skills</h2>
+                    <div class="box">    
+                        <ul>
+                            <!-- <li> Adobe Photoshop</li>
+                            <li> Adobe Lightroom</li>
+                            <li>Creativity</li>
+                            <li>Adobe illustrator</li> -->
+                            %skill%
+                        </ul>
+                  
+                    </div>
+                </div>
+        </div>
+            <div class="references">
+                <h2 class="title">References</h2>
+                    <!-- <ul>
+                        <li>
+                            <span class="text-dark">Michael Mikula</span>
+                            <span class="role">Photographer Teacher</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">407-4979-243</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">mmikulajrl@gmail.com</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Jenna Mannix</span>
+                            <span class="role">Director</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">855-5555-555</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">jenna.email@email.com</span>
+                        </li>
+                    </ul> -->
+                    %reference%
+                </div>
+            
+            </div>
+        </div>
+    </body>
+</html>

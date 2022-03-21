@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    
+
+    <meta name="HandheldFriendly" content="true">
+    <title>professional resume</title>
+    <!-- <link rel = "stylesheet" type="text/css" href="style5.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    
+    font-family: 'Roboto Slab', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+
+} */
+@font-face {
+    font-family: robotoslab;
+    src: url(./font/RobotoSlab-Regular.ttf);
+    src: url(./font/RobotoSlab-Bold.ttf);
+
+}       
+
+@font-face {
+    font-family: faregular;
+    src: url(./font/fa-regular-400.ttf);
+    } 
+
+    @font-face {
+    font-family: fasolid;
+    src: url(./font/fa-solid-900.ttf);
+    } 
+
+
+body{
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "robotoSlab";
+
+}
+
+.wrapper{
+    
+    width: 100%;
+    margin: 50px auto;
+    background: #FFFFFF;
+    padding: 15px;
+    width: 800px;
+    position: relative;
+    font-family: "robotoSlab";
+}
+.container{
+    display:inline-block;
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    
+   
+  
+}
+.head {
+	position: relative;
+    width: 600px;
+    margin-top: 15%;
+    width: 100%;
+    padding-left: 5%;
+    
+    
+}
+
+.head .head-left {
+	position: relative;
+    margin-top: 10px;
+    float: left;
+    width: 30%;
+}
+
+.head-left .contactinfo{
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    display:inline-block;
+    text-align: right;
+    width: 100%;
+  
+    
+   
+}
+.container ul{
+    position: relative;
+}
+.circle-icon {
+  
+  
+  align-items: right;
+    border: 1px solid black;
+    display: inline-block;
+    
+    height:40px;
+    width: 40px;
+    
+    border-radius:50%;
+    font-size:12px;
+    color:#000000;
+    line-height:40px;
+    text-align:center;
+    font-family: "fasolid"; 
+    /* margin-left: 120px; */
+    /* margin-right:10px; */
+    /* float: right; */
+
+
+
+ 
+
+    
+    
+}
+.contactinfo{
+    list-style: none;
+ 
+}
+
+.contactinfo ul li{
+    position: relative;
+    list-style:none;
+   /* // display: flex; */
+    float: left;
+    margin-left:10px;
+
+
+
+
+}
+.contactinfo ul li .circle-icon{
+    margin: 0;
+    color:#000000;
+   
+}
+
+.head .head-right {
+	position: relative;
+    margin-top: 10px;
+    float: right;
+    width: 50%;
+    
+   
+    
+}
+.head-right .name{
+    font-weight: 500;
+    font-size: 33px;
+    font-style: normal;
+ 
+}
+.head-right .role{
+    position: absolute;
+    font-style: normal;
+    font-weight:200;
+    font-size: 20px;
+    margin-top: 3%;
+
+}
+.title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-top: 20px;
+   
+  
+}
+.about{
+    display:inline-block;
+    padding-left: 5%;
+    
+
+
+}
+.about .box{
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 500px;
+    width: 100%;
+
+    
+    
+    
+
+}
+.box .right-box{
+    position: relative;
+    float: right;
+   
+    width: 50%;
+}
+    
+.box .left-box{
+    position: relative;
+    width: 50%;
+    float: left;
+   
+}
+
+
+
+
+.box .right-box .company{
+    font-weight: 700;
+    font-size: 12px;
+    color: #333333;
+}
+
+.box .left-box .position{
+    font-weight: 700;
+    font-size: 12px;
+    color:#333333;
+    width: 50%;
+}
+
+.box .right-box .text li{
+    font-style: normal;
+    font-weight:300;
+    font-size: 10px;
+    display:block;
+    color: #666666;
+    list-style: none;
+}
+.box .left-box .year{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.hr {
+    
+   
+    width: 50%;
+    text-align: right;
+    float: right;
+    height:2px;
+    border-width:0;
+    color:rgba(36, 39, 50, 1);
+    background-color:rgba(36, 39, 50, 1);
+    margin-top: 10px;
+
+
+
+}
+
+
+
+
+
+.education{
+    display:inline-block;
+    padding-left: 25px;
+    
+    
+}
+.education ul{
+    position: relative;
+    display: inline-block;
+  
+
+    width: 500px;
+    width: 100%;
+    list-style: none;
+    
+    
+}
+.education ul .year { 
+    float:left; 
+    width:50%; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #999999;
+    text-transform: uppercase;
+
+
+
+ }
+.education ul .type { 
+    position: relative;
+    float:right; 
+    width:50%; 
+    font-weight: 700;
+    font-size: 12px;
+    color:#333333;
+    
+}
+.education ul .location { 
+    position: relative;
+    float:right; 
+    width:50%; 
+    font-weight: 400;
+    font-size: 11px;
+    color:#333333;
+    
+}
+.skill-achieve{
+    width: 600px;
+ 
+}
+.skills{
+    width: 30%;
+    padding-left: 5%;
+   /* // display:inline-block; */
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    
+}
+
+h3{
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+.progressBar {
+    padding-bottom: 12px;
+    padding-bottom: 1em;
+    padding-left: 10%;
+
+    
+}
+.progressBar .label{
+ 
+    text-align: right;
+    margin-right: initial;
+    
+    
+}
+  
+
+  
+.progressBarContainer {
+    width: 100%;
+    max-width: 90%;
+    height: 8px;
+    height: 0.2em;
+    background:  #BACFD3;
+    background: rgba(36, 39, 50, 0.4);
+    overflow: hidden;
+}
+  
+.progressBarValue {
+    height: 0.2em;
+    float: right;
+    background: #242732;
+    background: rgb(36, 39, 50);
+
+}
+  
+.value-00 { width: 0; }
+  
+.value-10 { width: 10%; }
+  
+.value-20 { width: 20%; }
+  
+.value-30 { width: 30%; }
+  
+.value-40 { width: 40%; }
+  
+.value-50 { width: 50%; }
+  
+.value-60 { width: 60%; }
+  
+.value-70 { width: 70%; }
+  
+.value-80 { width: 80%; }
+  
+.value-90 { width: 90%; }
+  
+.value-100 { width: 100%; }
+
+.Achievements{
+    width: 50%;
+    float: right;
+    /* padding-left: 20%; */
+}
+.Achievements .box {
+    display: block;
+    position: relative;
+    margin-left: 10%;
+}
+.Achievements .box .year_achieve{
+    font-weight: 400;
+    color: #808080;
+    font-size: 10px;
+}
+.Achievements .box .text{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.references {
+    margin: 0;
+    display: block;
+    width: 30%;
+    padding-left: 25px;
+}
+
+.references .box{
+    display: block;
+    margin:0;
+    
+  
+}
+.references ul{
+    position: relative;
+    float: left;
+    padding-left: 10px;
+
+    
+
+}
+
+.references ul li {
+    position: relative;
+    list-style: none;
+
+    cursor: pointer;
+    
+
+}
+    
+.references ul li span {
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.references .text-dark{
+    font-weight: 700;
+    font-size: 12px;
+    
+}
+.references .role{
+    font-size: 10px;
+    color: #808080;
+    line-height: 15px;
+    display:block;
+}.icon{
+    font-family:"fasolid" ;
+}
+</style>
+<body>
+    <div class="wrapper">
+    
+    <div class="container">
+        
+        <div class="head">
+          
+            <div class="head-right">
+                <div class="name">ALBERT FLORES</div>
+                <div class="role">HOTEL HOSPITALITY</div>
+
+            </div>
+            <div class="head-left">
+                <div class="contactinfo">
+                    <li>
+                    
+                        <span class="text">512-829-2263<div class="circle-icon">&#xf095</div></span>
+                    </li>
+                    <li>
+                       
+                        <span class="text">KarenJ_Mckoy@gmail.com</span>
+                        <div class="circle-icon">&#xf0e0</div>
+                    </li>
+                    <li>
+                       
+                        <span class="text">1168 Brentwood Drive Austin,TX 78701</span>
+                        <div class="circle-icon">&#xf015</div>                    </li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        
+           
+            <div class="about">
+                <h2 class="title">Work experiences<hr class="hr"></hr></h2>
+                <div class="box">
+                <div class="left-box">
+                    <div class="position">Event Photographer</div>
+                    <div class="year">
+                        2018- Present
+                    </div>
+                </div>
+                <div class="right-box">
+                    <div class="company">
+                        Company Name
+                    </div>
+        
+                    <div class="text">
+                        <li>Selected and set up appropriate props, backdrops and lighting.</li>
+                        <li>Planned and prepared for all on-location and studio shoots.</li>
+                    </div>
+                </div>    
+                </div>
+                <div class="box">
+                <div class="left-box">
+                    <div class="position">Event Photographer</div>
+                    <div class="year">
+                        2018- Present
+                    </div>
+                </div>
+                <div class="right-box">
+                    <div class="company">
+                        Company Name
+                    </div>
+        
+                    <div class="text">
+                        <li>Selected and set up appropriate props, backdrops and lighting.</li>
+                        <li>Planned and prepared for all on-location and studio shoots.</li>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            
+            <div class="education">
+                <h2 class="title">Education<hr class="hr"></hr></h2>
+    
+                
+                <ul>
+                    <li class= "year">2012-2016</li>
+                    <li class= "type">BA in Hospitality Management</li> 
+                    <li class= "location">Harvard University</li>       
+                    
+                </ul>
+                <ul>
+                    <li class= "year">2009-2012</li>
+                    <li class= "type">High school</li> 
+                    <li class= "location">Dripping Springs High School</li>       
+                    
+                </ul>
+                <ul>
+                    <li class= "year">2006-2012</li>
+                    <li class= "type">Middle school</li> 
+                    <li class= "location">Sycamore Springs Middle School</li>       
+                    
+                </ul>
+                   
+            </div>
+            <div class="skill-achieve">
+            <div class="skills">
+                <h2 class="title">Skills</h2>
+                <div class="progressBar">
+                    <div class="label"><h3>Point of Sales (POS)</h3></div>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-90"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <div class="label"><h3>Microsoft office suite</h3></div>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-80"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <div class="label"><h3>Problem Solving</h3></div>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-30"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <div class="label"><h3>Team Leadership</h3></div>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-70"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Achievements">
+                <h2 class="title">Achievements</h2>
+                <div class="box">
+                    <div class="text">
+                        <p>Outstanding Achievement Award</p>
+                    </div>
+                    <div class="year_achieve">
+                        2017
+                    </div>
+                   
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <p>Employee of the Month</p>
+                    </div>
+                    <div class="year_achieve">
+                        2015
+                    </div>
+                    
+                </div>
+           
+            </div>
+            </div>
+        
+
+        
+       
+        
+            
+            <div class="references">
+                <h2 class="title">References</h2>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Michael Mikula</span><br>
+                            <span class="role">Photographer Teacher</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">407-4979-243</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">mmikulajrl@gmail.com</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Jenna Mannix</span><br>
+                            <span class="role">Director</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">855-5555-555</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">jenna.email@email.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+
+  
+    
+</body>
+</html>

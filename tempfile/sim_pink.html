@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    
+
+    <meta name="HandheldFriendly" content="true">
+    <title>professional resume</title>
+    <!-- <link rel = "stylesheet" type="text/css" href="style4.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html { font-size:100%; } 
+*{
+    
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+@font-face {
+    font-family: "Lato";
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+} */
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter-Regular.ttf);
+    src: url(./font/Inter-Bold.ttf);
+    src: url(./font/Inter-Light.ttf);
+  
+}       
+body{
+    background: #FFEBEE;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+
+
+.wrapper{
+    
+    
+    font-family: 'inter';
+    width: 100%;
+
+    background: #FFEBEE;
+    padding: 15px;
+    width: 800px;
+    
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    width: 100%;
+
+    
+  
+}
+.head {
+	position: relative;
+    width: 600px;
+    margin-top: 10px;
+    
+    
+}
+.head .head-left {
+   
+	
+	position: relative;
+    margin-top: 10px;
+    float: left;
+    width: 65%;
+   
+    
+}
+.head-left .name{
+    color: #081E54;
+    font-weight: 700;
+    font-size: 33px;
+    font-style: normal;
+    text-transform: uppercase;
+ 
+}
+.head-left .role{
+    color: rgb(114, 110, 110);
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: 3%;
+    text-transform: uppercase;
+
+}
+.head .head-right {
+	
+
+    float: right;
+    width: 30%;
+}
+.head .head-right ul {
+	list-style: none;
+}
+.head-right .contactinfo{
+    color: #081E54;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+}
+
+.container .left_Side{
+    position: relative;
+    width: 45%;
+    float: left;
+    margin: 0;
+   
+}
+
+.container .right_Side{
+    position: relative;
+    width: 45%;  
+    float: right;
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #081E54;
+}
+
+.about .box{
+    display: block;
+    position: relative;
+    color: #081E54;
+    padding-bottom: 5%;
+ 
+
+}
+.about .box .company{
+    font-weight: bold;
+    font-size: 12px;
+}
+.about .box .position{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.about .box .text li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display:contents;
+    list-style: none;
+    color:rgb(34, 35, 77);
+}
+.about .box .year{
+  
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:  rgb(114, 110, 110);
+    text-transform: uppercase;
+}
+.Achievements .box {
+    display: block;
+    position: relative;
+    color: #081E54;
+    margin-bottom: 5%;
+    
+}
+.Achievements .box .year_achieve{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:  rgb(114, 110, 110);
+    text-transform: uppercase;
+}
+.Achievements .box .text{
+    font-size: 12px;
+    font-weight: 500;
+}
+.education{
+display: block;
+}
+.education ul{
+   list-style: none;
+   padding-left: 10px;
+   
+}
+
+.education li{
+    padding-bottom: 10PX;
+    
+}
+
+
+h3{
+   font-size: 13px;
+   color: #081E54;
+   margin: 0;
+}
+h5{
+    font-size: 12px;
+    font-weight: 400;
+    color: #081E54;
+    margin: 0;
+}
+h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:  rgb(114, 110, 110);
+    text-transform: uppercase;
+    margin: 0;
+}
+.skills{
+    margin: 0;
+}
+
+.skills .box{
+    display: flex;
+    flex-direction: row;
+   
+ 
+   
+  
+}
+.skills .box ul {
+  
+    padding-left: 10px;
+
+    
+
+}
+.skills .box ul li{
+    position:relative;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    color: #081E54;
+    list-style:circle inside;
+    padding-left: 10px;
+
+    
+
+}
+.references {
+    margin-top: 5%;
+    color: #081E54;
+ 
+}
+
+
+.references ul{
+    position: relative;
+    display: block;
+    padding-bottom: 5%;
+    list-style: none;
+    padding-left: 10px;
+    
+    
+}
+
+.references .ul .li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+
+}
+    
+.references ul li span {
+    font-weight: 500;
+    font-size: 12px;
+    display:contents;
+
+}
+
+.references .text-dark{
+    font-weight: bold;
+    
+}
+.references .role{
+    font-size: 10px;
+    font-weight: 500;
+    color:  rgb(114, 110, 110);
+    line-height: 15px;
+ 
+
+}
+</style>
+<body>
+    <div class="wrapper">
+    
+    <div class="container">
+        
+        <div class="head">
+        <div class="head-left">
+            <div class="name">{UserName}</div>
+            <div class="role">{position}</div>
+
+        </div>
+        <div class="head-right">
+            <div class="contactinfo">
+                <ul>
+                    <li>
+                        <span class="phone">{phone}</span>
+                    </li>
+                    <li>
+                        <span class="email">{email}</span>
+                    </li>
+                    <li>
+                        <span class="Address">{address}</span>
+                    </li>
+               
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="left_Side">
+           
+            <div class="about">
+                <h2 class="title">Work experiences</h2>
+                <!-- <div class="box">
+                    <div class="company">Company Name
+                    </div>
+                    <div class="position">Event Photographer</div>
+                    <div class="text">
+                        <li>Selected and set up appropriate props, backdrops and lighting.</li>
+                        <li>Planned and prepared for all on-location and studio shoots.</li>
+                    </div>
+                    <div class="year">2018- Present
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="company">Company Name</div>
+                    <div class="position">Event Photographer</div>
+                   
+                    <div class="text">
+                        <li>Fabricated camera mounts and cases to capture images and protect equipment.</li>
+                        <li>Shot photographs in controlled lab, field and remote environments.</li>
+                    </div>
+                    <div class="year">2016-2018</div>
+                </div> -->
+                %experience%
+            </div>
+            
+            <div class="Achievements">
+                <h2 class="title">Achievements</h2>
+                <!-- <div class="box">
+                    <div class="text">
+                        <p>Outstanding Achievement Award</p>
+                    </div>
+                    <div class="year_achieve">2017
+                    </div>
+                   
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <p>Employee of the Month</p>
+                    </div>
+                    <div class="year_achieve">2015
+                    </div>
+                </div> -->
+                %achievement%
+            </div>
+        </div>
+
+        
+        <div class="right_Side">
+        
+            
+            <div class="education">
+                <h2 class="title">Education</h2>
+                <!-- <ul>
+                    <li>
+                        
+                        <h3>BA in Hospitality Management</h3>
+                        <h5>Harvard University</h5>
+                        <h6>2012-2016</h6>
+                    </li>
+                    <li>
+        
+                        <h3>High school</h3>
+                        <h5>Dripping Springs High School</h5>
+                        <h6>2009-2012</h6>
+                    </li>
+                    <li>
+                        
+                        <h3>Middle school</h3>
+                        <h5>Sycamore Springs Middle School</h5>
+                        <h6>2006-2012</h6>
+                    </li>
+                    
+               
+                </ul> -->
+                %education%
+            </div>
+            <div class="skills">
+                <h2 class="title">Skills</h2>
+                    <div class="box">    
+                        <!-- <ul>
+                            <li> Adobe Photoshop</li>
+                            <li> Adobe Lightroom</li>
+                            <li>Creativity</li>
+                            <li>Adobe illustrator</li>
+                        </ul> -->
+                        %skill%
+                    </div>
+            </div>
+            <div class="references">
+                <h2 class="title">References</h2>
+                    <!-- <ul>
+                        <li>
+                            <span class="text-dark">Michael Mikula</span><br>
+                            <span class="role">Photographer Teacher</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">407-4979-243</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">mmikulajrl@gmail.com</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Jenna Mannix</span><br>
+                            <span class="role">Director</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">855-5555-555</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">jenna.email@email.com</span>
+                        </li>
+                    </ul> -->
+                    %achievement%
+                </div>
+            </div>
+         </div>
+
+
+  
+    
+</body>
+</html>

@@ -1,0 +1,563 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Professional Resume 2</title>
+</head>
+<body>
+
+<style>
+    @font-face {
+    font-family: varelaround;
+    src: url(./font/VarelaRound-Regular.ttf);
+    }       
+
+    @font-face {
+    font-family: faregular;
+    src: url(./font/fa-regular-400.ttf);
+    } 
+
+    @font-face {
+    font-family: fasolid;
+    src: url(./font/fa-solid-900.ttf);
+    } 
+
+    .container{
+        width: 800px;
+        margin: 0;
+        overflow: auto;
+    }
+
+    .circle{
+        display: inline-block;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        font-size:16px;
+        color:#FFFFFF;
+        line-height:40px;
+        text-align:center;
+        background:#04aee3;
+        font-family: "fasolid"; 
+        vertical-align: middle;        
+    }
+
+    .circle_experience {
+        display: inline-block;
+        width:10px;
+        height:10px;
+        border-radius:50%;
+        font-size:10px;
+        color:#FFFFFF;
+        line-height:10px;
+        text-align:center;
+        background:#04aee3;
+        font-family: "fasolid"; 
+        vertical-align: middle;        
+    }
+    
+    .bullet {
+        font-size:10px;
+        color:#04aee3;
+        font-family: "fasolid"; 
+        vertical-align: middle;  
+        padding-top: 4px;      
+    }
+
+    body {
+        font-family: "varelaround";
+        background: #dbdbdb;
+    }
+
+    h1   {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 12px;
+        color: #EEEEEE;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .user_name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #EEEEEE;
+        text-align: center;
+    }
+
+    .job_position {
+        font-size: 16px;
+        color: #EEEEEE;
+        text-align: center;
+        padding-top:10px;
+    }
+
+    .line {
+        width: 90%;
+        height: 0;
+        background-color: #04aee3;
+        border: 1px solid #04aee3;
+        margin: 3px;
+        display:inline-block;
+    }
+
+    .divider {
+        padding-top: 10px;
+    }
+
+    .divider_large {
+        padding-top: 20px;
+    }
+
+    .column_left {
+        float: left;
+        width: 60%;
+    }
+    .column_right {
+        float: left;
+        width: 36%;
+        background: #525252;
+        height: 700px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column_title_left {
+        float: left;
+        width: 12%;
+    }
+
+    .column_title_right {
+        float: left;
+        width: 85%;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top:7px;
+    }
+
+    /* Clear floats after the columns */
+    .row_title:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .column_content_left {
+        float: left;
+        width: 20%;
+        text-align:right;
+        padding:0px 10px 0px 0px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #04aee3;
+    }
+
+    .column_content_right {
+        float: left;
+        width: 70%;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row_content:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column_title_left2 {
+        float: left;
+        width: 20%;
+        padding-left:15px;
+    }
+
+    .column_title_right2 {
+        float: left;
+        width: 70%;
+        font-size: 20px;
+        font-weight: bold;
+        color: #EEEEEE;
+        text-transform: uppercase;
+        padding-top:7px;
+    }
+
+    /* Clear floats after the columns */
+    .row_title2:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .column_content_left2 {
+        float: left;
+        width: 20%;
+        text-align:right;
+        padding:0px 10px 0px 0px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #04aee3;
+    }
+
+    .column_content_right2 {
+        float: left;
+        width: 70%;
+        font-size: 14px;
+        padding-right: 10px;
+        color:#EEEEEE;
+    }
+
+    /* Clear floats after the columns */
+    .row_content2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column_contact_left {
+        float: left;
+        width: 13%;
+        padding-left:40px;
+    }
+
+    .column_contact_right {
+        float: left;
+        width: 65%;
+        font-size: 12px;
+        padding-top:4px;
+        color: #EEEEEE;
+    }
+
+    /* Clear floats after the columns */
+    .row_contact:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .contact_icon {
+        font-family: "fasolid"; 
+        font-size: 20px;
+        color: #EEEEEE;
+    }
+
+    .progress_background {
+        width:200px;
+        height:10px;
+        background-color:#b9d0d7;
+        display:inline-flex
+    }
+
+    .progress_value {
+        height:10px;
+        background-color:#04aee3;
+        display:inline-flex
+    }
+
+</style>
+
+    <div class="container">
+
+        <!--PAGE ROW-->
+        <div class="row">
+
+            <!--PAGE COLUMN LEFT-->
+            <div class="column_left">
+
+                    <!--EXPERIENCE-->
+                    <!--title-->
+                    <div class="row_title">
+                        <div class="column_title_left"><div class="circle">&#xf0b1</div></div>
+                        <div class="column_title_right"> Experiences</div>
+                    </div>
+                    <!--/title-->
+                    <div class="line"></div>
+
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_left">2018-2019</div>
+                        <div class="column_content_right">Company Name
+                            <h2>Web Graphic Designer</h2>
+                            <p>Company Name gives me a lot, I have worked as a web and graphics designer also with WordPress. 
+                                I have worked for 1 year in this company.</p>
+                        </div>
+                    </div> -->
+                    %experience%
+                    <!--/content-->
+
+                    <!-- <div class="divider"></div> -->
+
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_left">2016-2018</div>
+                        <div class="column_content_right">Company Name
+                            <h2>Web|UI|Graphics Designer</h2>
+                            <p>Company Name is very helpful for me. I have worked for 1 year in this company like Web, UI/UX, 
+                                And Graphics designer With some WordPress Skills.</p>
+                        </div>
+                    </div> -->
+                    <!--/content-->
+                    <!--/EXPERIENCE-->
+
+                    <div class="divider_large"></div>
+
+                    <!--EDUCATION-->
+                    <!--title-->
+                    <div class="row_title">
+                        <div class="column_title_left"><div class="circle"><span style="font-family: fasolid; vertical-align: middle;">&#xf19d</span></div></div>
+                        <div class="column_title_right">Education</div>
+                    </div>
+                    <!--/title-->
+                    <div class="line"></div>
+
+                    %education%
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_left">2012-2016</div>
+                        <div class="column_content_right">Bachelor Degree in Communication Arts
+                            <h2>Harvard University</h2>
+                        </div>
+                    </div> -->
+                    <!--/content-->
+
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_left">2009-2012</div>
+                        <div class="column_content_right">High School
+                            <h2>Dripping Springs High School</h2>
+                        </div>
+                    </div>
+                    /content-->
+
+                    <!--content
+                    <div class="row_content">
+                        <div class="column_content_left">2006-2012</div>
+                        <div class="column_content_right">Middle School
+                            <h2>Sycamore Springs Middle School</h2>
+                        </div>
+                    </div> -->
+                    <!--/content-->
+                    <!--/EDUCATION-->
+
+                    <div class="divider_large"></div>
+
+                    <!--PROFESSIONAL SKILLS-->
+                    <!--title-->
+                    <div class="row_title">
+                        <div class="column_title_left"><div class="circle"><span style="font-family: fasolid; vertical-align: middle;">&#xf0eb</span></div></div>
+                        <div class="column_title_right">Professional Skills</div>
+                    </div>
+                    <!--/title-->
+                    <div class="line"></div>
+
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_right" style="padding-left:80px;"><h4>Web Design</h4>
+                            progress bar
+                            <div class="progress_background"><div class= "progress_value" style="width:100px"></div></div>
+                        </div>
+                    </div> -->
+                    <!--/content-->
+
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_right" style="padding-left:80px;"><h4>UI/UX Design</h4>
+                            progress bar
+                            <div class="progress_background"><div class= "progress_value" style="width:160px"></div></div>
+                        </div>
+                    </div> -->
+                    <!--/content-->
+
+                    <!-- content
+                    <div class="row_content">
+                        <div class="column_content_right" style="padding-left:80px;"><h4>Graphic Design</h4>
+                            progress bar
+                            <div class="progress_background"><div class= "progress_value" style="width:100px"></div></div>
+                        </div>
+                    </div>
+                    /content
+
+                    content
+                    <div class="row_content">
+                        <div class="column_content_right" style="padding-left:80px;"><h4>Wordpress</h4>
+                            progress bar
+                            <div class="progress_background"><div class= "progress_value" style="width:180px"></div></div>
+                        </div>
+                    </div> -->
+                    %skill%
+                    <!--/content-->
+                    <!--/PROFESSIONAL SKILLS-->
+
+                    <div class="divider_large"></div>
+
+                    <!--REFERENCE-->
+                    <!--title-->
+                    <div class="row_title">
+                        <div class="column_title_left"><div class="circle"><span style="font-family: fasolid; vertical-align: middle;">&#xf500</span></div></div>
+                        <div class="column_title_right">References</div>
+                    </div>
+                    <!--/title-->
+                    <div class="line"></div>
+                            %reference%
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_right" style="padding-left:50px;"><h3>Michael Mikula</h3>
+                            Photographer Teacher<br>
+                            Phone: 407-4979-243<br>
+                            Email: mmikulajrl@gmail.com
+                        </div>
+                    </div> -->
+                    <!--/content-->
+
+                    <!-- <div class="divider"></div> -->
+
+                    <!--content-->
+                    <!-- <div class="row_content">
+                        <div class="column_content_right" style="padding-left:50px;"><h3>Jenna Mannix</h3>
+                            Director<br>
+                            Phone: 855-5555-555<br>
+                            Email: jenna.email@email.com
+                        </div>
+                    </div> -->
+                    <!--/content-->
+                    <!--/REFERENCE-->
+
+            </div>
+            <!--/PAGE COLUMN LEFT-->
+
+
+
+            <!--PAGE COLUMN RIGHT-->
+            <div class="column_right">
+                
+                <!--IMAGE-->
+                <div ><img src="../{MyImage}" width="200"style="align-items: center; padding-left:15%;" ></div>
+
+                <!--USER NAME-->
+                <div class="user_name">{UserName}</div>
+
+                <!--USER POSITION-->
+                <div class="job_position">{position}</div>
+
+                <div class="divider_large"></div>
+                <div class="divider_large"></div>
+
+                <!--CONTACT-->
+                <!--title-->
+                <div class="row_title2">
+                    <div class="column_title_left2"><div class="circle">&#xf2bb</div></div>
+                    <div class="column_title_right2"> Contact</div>
+                </div>
+                <!--/title-->
+                <div class="line"></div>
+
+                <div class="divider"></div>
+
+                <!--contact info-->
+                <div class="row_contact">
+                    <div class="column_contact_left"><div class="contact_icon">&#xf879</div></div>
+                    <div class="column_contact_right">{phone}
+                    </div>
+                </div>
+                <!--/contact info-->
+
+                <div class="divider"></div>
+
+                <!--contact info-->
+                <div class="row_contact">
+                    <div class="column_contact_left"><div class="contact_icon">&#xf0e0</div></div>
+                    <div class="column_contact_right">{email}
+                    </div>
+                </div>
+                <!--/contact info-->
+
+                <div class="divider"></div>
+
+                <!--contact info-->
+                <div class="row_contact">
+                    <div class="column_contact_left"><div class="contact_icon">&#xf015</div></div>
+                    <div class="column_contact_right">{address}
+                    </div>
+                </div>
+                <!--/contact info-->
+                <!--/CONTACT-->
+
+                <div class="divider_large"></div>
+
+                <!--ACHIEVEMENT-->
+                <!--title-->
+                <div class="row_title2">
+                    <div class="column_title_left2"><div class="circle">&#xf091</div></div>
+                    <div class="column_title_right2"> Achievements</div>
+                </div>
+                <!--/title-->
+                <div class="line"></div>
+
+                <!-- <div class="divider"></div> -->
+
+                <!--content-->
+                <!-- <div class="row_content2">
+                    <div class="column_content_left2">2017</div>
+                    <div class="column_content_right2">Photoshop Ace
+                    </div>
+                </div> -->
+                <!--/content-->
+                %achievement%
+
+                <!-- <div class="divider"></div>
+                     -->
+                <!--content-->
+                <!-- <div class="row_content2">
+                    <div class="column_content_left2">2015</div>
+                    <div class="column_content_right2">Lens Culture portrait awards
+                    </div>
+                </div> -->
+                <!--/content-->
+
+                <!-- <div class="divider"></div> -->
+                    
+                <!--content-->
+                <!-- <div class="row_content2">
+                    <div class="column_content_left2">2012</div>
+                    <div class="column_content_right2">Other achievement here
+                    </div>
+                </div> -->
+                <!--/content-->
+
+                <!--/ACHIEVEMENT-->
+
+            </div>
+            <!--/PAGE COLUMN RIGHT-->
+
+        </div>
+        <!--PAGE ROW-->
+
+    </div> <!--/container-->
+
+</body>
+</html>

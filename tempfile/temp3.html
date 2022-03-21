@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    
+
+    <meta name="HandheldFriendly" content="true">
+    <title>professional resume</title>
+
+</head>
+<style>
+    
+
+
+@font-face {
+    font-family: playfairdisplay;
+    src: url(./font/PlayfairDisplay-Regular.ttf);
+    src: url(./font/PlayfairDisplay-Bold.ttf);
+  
+}       
+
+body{
+    background: #F5F6F8;
+    /* font-size: 14px;
+    line-height: 20px; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "playfair Display";
+    overflow: auto;
+ 
+}
+/*@media only screen and (max-width: 740px) {
+    h1 { font-size: 4.5em; }
+    h3 { font-size: 2.2em; }
+    h2 { display: block; text-align: center; }
+
+    
+    #w { padding: 20px 15px; }
+    p { padding: 0; }
+}
+
+@media only screen and (max-width: 570px) {
+    ul li {
+      display: inline-block; 
+      padding-left: 15px; 
+      width: 140px; 
+      background-position: -5px 0px;
+      margin-right: 6px; 
+      line-height: 1.7em;
+    }
+    #skills-left, skills-right { margin-bottom: 15px; }
+}
+@media only screen and (max-width: 480px) {
+    ul li { width: 120px; }
+    #w { margin: 0 20px; }
+}
+   
+@media only screen and (max-width: 320px) {
+    #w { margin: 0 10px; }
+}
+  */ 
+  /** iPhone only **/
+/*@media screen and (max-device-width: 480px) {
+    ul li { width: 150px; }
+}
+@media screen and (max-width: 800px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+/*@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+*/
+
+/*@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+.wrapper{
+    
+    
+  
+    width: 100%;
+    margin: 0;
+    background: #F5F6F8;
+    padding: 15px;
+    width: 800px;
+    page-break-after: always;
+ 
+    
+    
+}
+.border{
+    border: 4px solid rgba(34, 33, 33, 0.6);
+}
+.container{
+    display: flex;
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+
+    
+  
+}
+.center {
+    border: 2px solid #C6D9D9;
+	text-align: center;
+	position: relative;
+    align-items: center;
+    line-height: 60px;
+    /* margin-top: 10px; */
+
+    width: 550px;
+    padding-left: 25px;
+    
+    
+}
+
+.name {
+	font-size: 50px;
+	font-weight: 300;
+	display: inline-block;
+    /* bottom: 10px;
+    padding-top: 20px; */
+    
+}
+.role{
+    font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+    /* position: relative; */
+    line-height: 60px;
+    padding-top: 0 ;
+  
+    
+    
+}
+
+
+
+.container .left_Side{
+    position: relative;
+    width: 45%;
+    margin: 15px;
+    float: left;
+   
+}
+.contactinfo ul{
+    padding-left: 12px;
+   
+}
+.contactinfo ul li{
+    /* position: relative; */
+    list-style:none;
+    /* margin: 10px 0; */
+    cursor: pointer;
+    /* padding-bottom: 10px; */
+
+    
+}
+
+.contactinfo ul li .text-title{
+    
+    width: 30px;
+    font-size: 12px;
+    font-weight:bold;
+    
+}
+
+
+.contactinfo ul li .text{
+   
+    
+    font-size: 10px;
+    padding: 10px;
+    
+}
+.Skills{
+    padding-top: 5%;
+    
+}
+
+.progressBar {
+    margin-bottom: 26px;
+    margin-bottom: 1.66em;
+  }
+  
+
+  
+  .progressBarContainer {
+    width: 100%;
+    max-width: 80%;
+    height: 10px;
+    height: 0.5em;
+    background: #BACFD3;
+    background: rgba(8,102,220,.2);
+    overflow: hidden;
+}
+  
+  .progressBarValue {
+    height: 0.5em;
+    float: left;
+    background: #171824;
+    background: rgba(2, 16, 32, 0.75);
+  }
+  
+  .value-00 { width: 0; }
+  
+  .value-10 { width: 10%; }
+  
+  .value-20 { width: 20%; }
+  
+  .value-30 { width: 30%; }
+  
+  .value-40 { width: 40%; }
+  
+  .value-50 { width: 50%; }
+  
+  .value-60 { width: 60%; }
+  
+  .value-70 { width: 70%; }
+  
+  .value-80 { width: 80%; }
+  
+  .value-90 { width: 90%; }
+  
+  .value-100 { width: 100%; }
+
+
+
+
+.title{
+    /* margin-top: 10px; */
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+    text-transform: uppercase;
+  
+}
+
+.Achievements .box {
+    display: contents
+    
+    
+}
+.Achievements .box .year_achieve{
+    font-weight: 400;
+  
+
+    font-size: 10px;
+    color: #808080;
+
+}
+.Achievements .box .text{
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+.container .right_Side{
+    position: relative;
+    width: 45%;
+    float: right;
+    
+   
+}
+.about .box{
+    display: block;
+ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box .year{
+    float: right;
+    color: #808080;
+    font-size: 12px;
+    width: 30%;
+    
+
+}
+.box .company{
+
+   font-size: 13px;
+
+
+}
+h4{
+    font-size: 12px;
+    color: #808080;
+}
+.box .text li{
+    display:list-item;
+    list-style-type:disc;
+    font-size: 11px;
+}
+
+.education {
+    display: block;
+}
+.education ul{
+ 
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 10px;
+
+}
+.education li{
+    padding-bottom: 10px;
+   
+}
+h3{
+   font-size: 13px;
+ 
+   margin: 0;
+}
+h5{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+h6{
+    font-size: 10px;
+    color: #808080;
+
+    margin: 0;
+}
+.references {
+    margin-top: 5%;
+
+ 
+}
+
+
+.references ul{
+    margin: 0;
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.references ul li {
+    position: relative;
+    list-style: none;
+  
+    cursor: pointer;
+    
+    
+
+}
+    
+.references ul li span {
+    font-weight: 300;
+    font-size: 12px;
+    display:contents;
+
+}
+
+.references .text-dark{
+    font-weight: bold;
+    
+}
+.references .role{
+    font-size: 10px;
+    color: #808080;
+    line-height: 15px;
+    display:block;
+}
+</style>
+<body>
+    <div class="wrapper">
+    <div class="border">
+    <div class="container">
+        
+        
+        <div class="center">
+            <div class="name">ALBERT FLORES</div>
+            <div class="role">HOTEL HOSPITALITY</div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="left_Side">
+           
+            <div class="contactinfo">
+                <h3 class="title">Contact </h3>
+                <ul>
+                    <li>
+                        <span class="text-title">Phone</span><br>
+                        <span class="text">512-829-2263</span>
+                    </li>
+                    <li>
+                        <span class="text-title">Email</span><br>
+                        <span class="text">KarenJ_Mckoy@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="text-title">Address</span><br>
+                        <span class="text">1168 Brentwood Drive Austin,TX 78701</span>
+                    </li>
+               
+                </ul>
+            </div>
+            <div class="skills">
+                <h2 class="title">Skills</h2>
+                <div class="progressBar">
+                    <h3>Point of Sales (POS)</h3>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-90"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h3>Microsoft office suite</h3>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-80"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h3>Problem Solving</h3>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-30"></div>
+                    </div>
+                  </div>
+                  <div class="progressBar">
+                    <h3>Team Leadership</h3>
+                    <div class="progressBarContainer">
+                      <div class="progressBarValue value-70"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Achievements">
+                <h2 class="title">Achievements</h2>
+                <div class="box">
+                    <div class="text">
+                        <p>Outstanding Achievement Award</p>
+                    </div>
+                    <div class="year_achieve">
+                        2017
+                    </div>
+                   
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <p>Employee of the Month</p>
+                    </div>
+                    <div class="year_achieve">
+                        2015
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="right_Side">
+            <div class="about">
+                <h2 class="title">Experiences</h2>
+                <div class="box">
+                    
+                    <div class="company" >
+                        Company Name
+                    </div>
+                    <div class="year" >
+                        2018- Present
+                    </div>
+               
+                    <div class="text">
+                        <h4>Event Photographer</h4>
+                        <li>Selected and set up appropriate props, backdrops and lighting.</li>
+                        <li>Planned and prepared for all on-location and studio shoots.</li>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="company">
+                        Company Name
+                    </div>
+                    <div class="year">2016-2018</div>
+                    <div class="text">
+                        <h4>Event Photographer</h4>
+                        <li>Fabricated camera mounts and cases to capture images and protect equipment.</li>
+                        <li>Shot photographs in controlled lab, field and remote environments.</li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education">
+                <h2 class="title">Education</h2>
+                <ul>
+                    <li>
+                        
+                        <h3>BA in Hospitality Management</h3>
+                        <h6>2012-2016</h6>
+                        <h5>Harvard University</h5>
+                    </li>
+                    <li>
+        
+                        <h3>High school</h3>
+                        <h6>2009-2012</h6>
+                        <h5>Dripping Springs High School</h5>
+                    </li>
+                    <li>
+                        
+                        <h3>Middle school</h3>
+                        <h6>2006-2012</h6>
+                        <h5>Sycamore Springs Middle School</h5>
+                    </li>
+                    
+               
+                </ul>
+            </div>
+            <div class="references">
+                <h2 class="title">references</h2>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Michael Mikula</span>
+                            <span class="role">Photographer Teacher</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">407-4979-243</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">mmikulajrl@gmail.com</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Jenna Mannix</span>
+                            <span class="role">Director</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">855-5555-555</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">jenna.email@email.com</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text-dark">Jenna Mannix</span>
+                            <span class="role">Director</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Phone:</span>
+                            <span class="text">855-5555-555</span>
+                        </li>
+                        <li>
+                            <span class="text-dark">Email:</span>
+                            <span class="text">jenna.email@email.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+    
+</body>
+</html>
