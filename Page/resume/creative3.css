@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html { font-size:100%; } 
+*{
+    
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+@font-face {
+    font-family: "Lato";
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+}
+
+body{
+    background: #ffff;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*@media only screen and (max-width: 740px) {
+    h1 { font-size: 4.5em; }
+    h3 { font-size: 2.2em; }
+    h2 { display: block; text-align: center; }
+
+    
+    #w { padding: 20px 15px; }
+    p { padding: 0; }
+}
+
+@media only screen and (max-width: 570px) {
+    ul li {
+      display: inline-block; 
+      padding-left: 15px; 
+      width: 140px; 
+      background-position: -5px 0px;
+      margin-right: 6px; 
+      line-height: 1.7em;
+    }
+    #skills-left, skills-right { margin-bottom: 15px; }
+}
+@media only screen and (max-width: 480px) {
+    ul li { width: 120px; }
+    #w { margin: 0 20px; }
+}
+   
+@media only screen and (max-width: 320px) {
+    #w { margin: 0 10px; }
+}
+  */ 
+  /** iPhone only **/
+/*@media screen and (max-device-width: 480px) {
+    ul li { width: 150px; }
+}
+@media screen and (max-width: 800px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+/*@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+*/
+
+/*@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+.wrapper{
+    
+    
+    font-family: 'PlayFair Display',serif;
+    width: 100%;
+    margin: 50px auto;
+    background: #F2C544;
+    padding: 15px;
+    width: 800px;
+    overflow: hidden;
+    
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+
+    
+  
+}
+.head {
+	position: relative;
+    width: 600px;
+    margin-top: 10px;
+    
+    
+}
+.head .head-right {
+   
+	
+	position: relative;
+    margin-top: 10px;
+    float: right;
+    width: 50%;
+    
+   
+    
+}
+.head-right .name{
+    color: #FFFF;
+    font-weight: 700;
+    font-size: 33px;
+    font-style: normal;
+    align-items:flex-end;
+ 
+}
+.head-right .role{
+    color: #235789;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 5%;
+    
+
+}
+
+
+.head .head-left {
+	position: relative;
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+
+}
+.head-left .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.head-left .img img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.head-left .box {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black; 
+    position: absolute;
+    top: -95px;
+    left: -110px;
+    border-top-left-radius: 2% 0%;
+    border-top-right-radius: 90% 100%;
+    border-bottom-right-radius: 100% 80%;
+    border-bottom-left-radius: 70% 90%;
+    background-color: #ff9b5f;
+    background-image: linear-gradient(
+19deg
+, #ff9b5f 0%, #ff9b5f 100%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+
+.container .left_Side{
+    position: relative;
+    width: 50%;
+    margin: 15px;
+   
+}
+.left_Side .blob1 {
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    border-top-left-radius: 90px 80px;
+    border-top-right-radius: 160px 180px;
+    border-bottom-right-radius: 130px 119px;
+    border-bottom-left-radius: 190px 191px;
+    background-color: #c70039;
+    background-image: linear-gradient( 
+19deg
+ , #c70039 0%, #c70039 100%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    right: 100px;
+    top: 400px;
+}
+
+.container .right_Side{
+    position: relative;
+    width: 50%;  
+}
+.right_Side .blob{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: absolute;
+    border-top-left-radius: 70% 100%;
+    border-top-right-radius: 100% 90%;
+    border-bottom-right-radius: 90% 50%;
+    border-bottom-left-radius: 100% 91%;
+    background-color: #5f9ea0;
+    background-image: linear-gradient( 
+19deg
+ , #5f9ea0 0%, #5f9ea0 100%);
+    bottom: 120px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    left: 100px;
+    
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #235789;
+}
+
+.about .box{
+    display: block;
+    position: relative;
+    color: #000000;
+    margin-bottom: 5%;
+    
+
+}
+.about .box .company{
+    font-weight: bold;
+    font-size: 12px;
+}
+.about .box .position{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.about .box .text li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display:contents;
+}
+.about .box .year{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color:  #FFFF;
+    text-transform: uppercase;
+    float: right;
+    padding-right: 40px;
+}
+.Achievements .box {
+    display: block;
+    position: relative;
+    color: #000000;
+    margin-bottom: 5%;
+    
+}
+.Achievements .box .year_achieve{
+    font-weight: 400;
+    color: #FFFF
+}
+.Achievements .box .text{
+    font-size: 12px;
+    font-weight: 500;
+}
+.education ul li{
+    display: block;
+    margin-bottom: 3%;
+    
+   
+}
+.education{
+    position: relative;
+}
+
+
+h3{
+   font-size: 13px;
+   color: #000000;
+}
+h5{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:  #FFFF;
+    text-transform: uppercase;
+}
+.skills{
+    margin-top: 50px;
+}
+
+.skills .box{
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+}
+
+.skills .box ul li{
+    position:relative;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    /*list-style:circle inside;*/
+  
+   
+
+    
+
+}
+.skills .box li{
+   background-image: url(star.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin: 0;
+	padding: 0 0 3px 30px;
+}
+
+.references {
+    margin-top: 5%;
+    color: #000000;
+ 
+}
+
+
+.references ul{
+    position: relative;
+    display: block;
+    padding-bottom: 5%;
+    
+    
+}
+
+.references .ul .li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+
+}
+    
+.references ul li span {
+    font-weight: 500;
+    font-size: 12px;
+    display:contents;
+
+}
+
+.references .text-dark{
+    font-weight: bold;
+    
+}
+.references .role{
+    font-size: 10px;
+    font-weight: 500;
+    color: #FFFF;
+    line-height: 15px;
+    display: block;
+}
+
+.contactinfo{
+    position: relative;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style:none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+.circle-icon {
+    background: #235789;
+    border-radius: 50%;
+    padding: 10px;
+    vertical-align:middle;
+    width: 30px;
+    height: 30px;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style:none;
+    margin: 10px auto;
+    cursor: pointer;
+    color: #FFF;
+    display: block;
+
+}
+.contactinfo ul li .icon{
+    position: relative;
+    display: inline-block;
+    color:#FFF;
+}
+.contactinfo ul li span{
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+}
+

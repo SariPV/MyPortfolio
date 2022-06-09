@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html { font-size:100%; } 
+*{
+    
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+@font-face {
+    font-family: "Lato";
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+}
+
+body{
+    background: #000000;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*@media only screen and (max-width: 740px) {
+    h1 { font-size: 4.5em; }
+    h3 { font-size: 2.2em; }
+    h2 { display: block; text-align: center; }
+
+    
+    #w { padding: 20px 15px; }
+    p { padding: 0; }
+}
+
+@media only screen and (max-width: 570px) {
+    ul li {
+      display: inline-block; 
+      padding-left: 15px; 
+      width: 140px; 
+      background-position: -5px 0px;
+      margin-right: 6px; 
+      line-height: 1.7em;
+    }
+    #skills-left, skills-right { margin-bottom: 15px; }
+}
+@media only screen and (max-width: 480px) {
+    ul li { width: 120px; }
+    #w { margin: 0 20px; }
+}
+   
+@media only screen and (max-width: 320px) {
+    #w { margin: 0 10px; }
+}
+  */ 
+  /** iPhone only **/
+/*@media screen and (max-device-width: 480px) {
+    ul li { width: 150px; }
+}
+@media screen and (max-width: 800px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+/*@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+*/
+
+/*@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+.wrapper{
+    
+    
+    font-family: 'PlayFair Display',serif;
+    width: 100%;
+    margin: 50px auto;
+    background: #FFEBEE;
+    padding: 15px;
+    width: 800px;
+    
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+
+    
+  
+}
+.head {
+	position: relative;
+    width: 600px;
+    margin-top: 10px;
+    
+    
+}
+.head .head-left {
+   
+	
+	position: relative;
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+   
+    
+}
+.head-left .name{
+    color: #081E54;
+    font-weight: 700;
+    font-size: 33px;
+    font-style: normal;
+ 
+}
+.head-left .role{
+    color: rgba(8, 30, 84, 0.15);
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: 3%;
+
+}
+.head .head-right {
+	position: relative;
+    margin-top: 10px;
+    float: right;
+    width: 30%;
+}
+
+.head-right .contactinfo{
+    color: #081E54;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container .left_Side{
+    position: relative;
+    width: 50%;
+    margin: 15px;
+   
+}
+
+.container .right_Side{
+    position: relative;
+    width: 50%;  
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #081E54;
+}
+
+.about .box{
+    display: block;
+    position: relative;
+    color: #081E54;
+    margin-bottom: 5%;
+
+}
+.about .box .company{
+    font-weight: bold;
+    font-size: 12px;
+}
+.about .box .position{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.about .box .text li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display:contents;
+}
+.about .box .year{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color:  rgba(8, 29, 84, 0.479);
+    text-transform: uppercase;
+}
+.Achievements .box {
+    display: block;
+    position: relative;
+    color: #081E54;
+    margin-bottom: 5%;
+    
+}
+.Achievements .box .year_achieve{
+    font-weight: 400;
+    color: rgba(8, 29, 84, 0.479);
+}
+.Achievements .box .text{
+    font-size: 12px;
+    font-weight: 500;
+}
+.education ul li{
+    display: block;
+    margin-bottom: 3%;
+   
+}
+
+
+h3{
+   font-size: 13px;
+   color: #081E54;
+}
+h5{
+    font-size: 12px;
+    font-weight: 400;
+    color: #081E54;
+}
+h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:  rgba(8, 29, 84, 0.479);
+    text-transform: uppercase;
+}
+.skills{
+    margin-top: 50px;
+}
+
+.skills .box{
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+}
+
+.skills .box ul li{
+    position:relative;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    color: #081E54;
+    list-style:circle inside;
+
+    
+
+}
+.references {
+    margin-top: 5%;
+    color: #081E54;
+ 
+}
+
+
+.references ul{
+    position: relative;
+    display: block;
+    padding-bottom: 5%;
+    
+    
+}
+
+.references .ul .li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+
+}
+    
+.references ul li span {
+    font-weight: 500;
+    font-size: 12px;
+    display:contents;
+
+}
+
+.references .text-dark{
+    font-weight: bold;
+    
+}
+.references .role{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(8, 29, 84, 0.479);
+    line-height: 15px;
+    display: block;
+}
