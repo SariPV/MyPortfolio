@@ -31,7 +31,7 @@ require_once('config.php');
         <!--==================== CSS ====================-->
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./index.css">
         
         
         <title>Responsive Portfolio Website</title>
@@ -43,7 +43,7 @@ require_once('config.php');
                 <a href="#" class="nav-logo">MyPortfolio</a>
                     <ul class="nav-menu">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="./index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Blog</a>

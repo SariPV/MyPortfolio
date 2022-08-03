@@ -20,7 +20,7 @@ require('config.php');
         <!--==================== CSS ====================-->
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./index.css">
         
         
         <title>Responsive Portfolio Website</title>
@@ -42,7 +42,7 @@ require('config.php');
                             <a href="index2.php#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="signUp.html"  name= "signOut" class="button">Log out</a>
+                            <a href="./signUp.html"  name= "signOut" class="button">Log out</a>
                         </li>
                         
       
@@ -62,7 +62,7 @@ require('config.php');
             </nav>
             
             </header>
-            <a href="tempForm.html" class="btn btn-primary" style="color:#2CE080; background-color: #ffffff;border-color: #2CE080; margin-top: 50px; float: right; margin-right: 20px;"><i style="color:#2CE080;" class="bi bi-file-earmark-plus"></i> Create New Template</a>
+            <a href="./tempForm.html" class="btn btn-primary" style="color:#2CE080; background-color: #ffffff;border-color: #2CE080; margin-top: 50px; float: right; margin-right: 20px;"><i style="color:#2CE080;" class="bi bi-file-earmark-plus"></i> Create New Template</a>
 
             <div class="outer-wrapper">
 

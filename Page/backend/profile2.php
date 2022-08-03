@@ -46,7 +46,7 @@ if(!isset($_SESSION['userLogin']))
 <!-- Moment Js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./index.css">
         
         
         <title>Responsive Portfolio Website</title>
@@ -58,13 +58,13 @@ if(!isset($_SESSION['userLogin']))
                 <a href="#" class="nav-logo">MyPortfolio</a>
                     <ul class="nav-menu">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="./index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a href="template.html" class="nav-link">Template</a>
+                            <a href="./template.html" class="nav-link">Template</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">About</a>
