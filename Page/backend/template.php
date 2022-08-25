@@ -15,7 +15,7 @@
         <!--==================== CSS ====================-->
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../index.css">
         
         
         <title>Responsive Portfolio Website</title>
@@ -103,7 +103,7 @@
                          <input type="hidden" id="template" name="templates" value="<?php echo $row['templates'] ?>" >
                          <!-- <input type="image" name="submit_img" value="Submit"  src="<?php echo $row['templateImage'] ?>"> -->
                          <button type="submit" name="submit_img" value=" " style="border:none;">
-                          <img src="<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
+                          <img src="../<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
                           </button>
                          <!-- <input name="Submit" type="submit" value="<?php echo $row['templateImage'] ?>"> -->
 
@@ -150,7 +150,7 @@
                          <input type="hidden" id="template" name="templates" value="<?php echo $row['templates'] ?>" >
                          <!-- <input type="image" name="submit_img" value="Submit"  src="<?php echo $row['templateImage'] ?>"> -->
                          <button type="submit" name="submit_img" value=" " style="border:none;">
-<img src="<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
+<img src="../<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
 </button>
                          <!-- <input name="Submit" type="submit" value="<?php echo $row['templateImage'] ?>"> -->
 
@@ -195,7 +195,7 @@
                          <input type="hidden" id="template" name="templates" value="<?php echo $row['templates'] ?>" >
                          <!-- <input type="image" name="submit_img" value="Submit"  src="<?php echo $row['templateImage'] ?>"> -->
                          <button type="submit" name="submit_img" value=" " style="border:none;">
-                          <img src="<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
+                          <img src="../<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
                           </button>
                          <!-- <input name="Submit" type="submit" value="<?php echo $row['templateImage'] ?>"> -->
 
@@ -235,7 +235,7 @@
                          <input type="hidden" id="template" name="templates" value="<?php echo $row['templates'] ?>" >
                          <!-- <input type="image" name="submit_img" value="Submit"  src="<?php echo $row['templateImage'] ?>"> -->
                          <button type="submit" name="submit_img" value=" " style="border:none;">
-                          <img src="<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
+                          <img src="../<?php echo $row['templateImage'] ?>" width="300" height="300 " alt="submit" />
                           </button>
                          <!-- <input name="Submit" type="submit" value="<?php echo $row['templateImage'] ?>"> -->
 
@@ -254,7 +254,7 @@
 
             </body>
             <!--==================== MAIN JS ====================-->
-        <script src="index.js"></script>
+        <script src="../index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

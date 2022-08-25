@@ -42,7 +42,7 @@
         
         <!--==================== CSS ====================-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../index.css">
         
         <title>Responsive Portfolio Website</title>
     </head>
@@ -95,7 +95,7 @@
                             <a href="#" class="button">Start now</a>
                         </div>
         
-                        <img src="images/character.svg" alt="img" class="home_img">
+                        <img src="../images/character.svg" alt="img" class="home_img">
                
                 </div>
             </section>
@@ -160,7 +160,7 @@
                   font-weight: 500;
                   margin-left: 50%; margin-top:10px;
                   text-align: center;"> Edit template now</button></a>
-                  <div class="img" style="  position: relative;width: 60%; margin-left: 30%;"><img src="./images/tm4.png" style="position: relative;" alt=""><img src="./images/tm1.png" style=" position: relative" alt=""></div>
+                  <div class="img" style="  position: relative;width: 60%; margin-left: 30%;"><img src="../images/tm4.png" style="position: relative;" alt=""><img src="../images/tm1.png" style=" position: relative" alt=""></div>
                   <!-- <div class="img" style="float: right;  position: relative;top: 0;left: 0;"><img src="./images/tm1.png" style=" position: relative;top: 0;left: 0;" alt=""><img src="./images/tm3.png" style="position: absolute;top: 0px;right: 120px;" alt=""></div> -->
 
                   </div>
@@ -179,7 +179,7 @@
                             and give you access to the best resume designs you’ll ever see.</p>
                     </div>
 
-                    <img src="images/about.png" class="about_img">
+                    <img src="../images/about.png" class="about_img">
                 </div>
         
             </section>
@@ -197,7 +197,7 @@
         <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="index.js"></script>
+        <script src="../index.js"></script>
         
         </body>
 </html>

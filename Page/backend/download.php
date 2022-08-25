@@ -7,42 +7,42 @@ if (isset($_POST["submit_img"]) == "Submit"){
 
     if($file == "pro_brown.html"){
         echo $file;
-        header("Location:/resume/pro_brown.php");
+        header("Location:../resume/pro_brown.php");
       
     }
     if($file == "pro_blue.html"){
         echo $file;
-        header("Location:/resume/pro_blue.php");
+        header("Location:../resume/pro_blue.php");
       
     }
     if($file == "pro_white.html"){
         echo $file;
-        header("Location:/resume/pro_white.php");
+        header("Location:../resume/pro_white.php");
       
     }
     if($file == "sim_pink.html"){
         echo $file;
-        header("Location:/resume/sim_pink.php");
+        header("Location:../resume/sim_pink.php");
       
     }
     if($file == "sim_white.html"){
         echo $file;
-        header("Location:/resume/sim_white.php");
+        header("Location:../resume/sim_white.php");
       
     }
     if($file == "sim_green.html"){
         echo $file;
-        header("Location:/resume/sim_green.php");
+        header("Location:../resume/sim_green.php");
       
     }
     if($file == "creative_purple.html"){
         echo $file;
-        header("Location:/resume/creative_purple.php");
+        header("Location:../resume/creative_purple.php");
       
     }
     if($file == "creative_yellow.html"){
         echo $file;
-        header("Location:/resume/creative_yellow.php");
+        header("Location:../resume/creative_yellow.php");
       
     }
 }

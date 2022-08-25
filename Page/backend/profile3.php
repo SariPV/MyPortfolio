@@ -4,7 +4,8 @@
 
 	if(!isset($_SESSION['userLogin']))
 	{
-		echo "Please Login!";
+		// echo "Please Login!";
+        header("location:../login.html");
 		exit();
 	}else{
     //  $query = "SELECT 'role' from user_account where id ='".$_SESSION['userLogin']."'";
@@ -66,7 +67,7 @@
         <!--==================== CSS ====================-->
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../index.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         
@@ -172,7 +173,7 @@
                     <div class="tab-content" id="v-pills-tabContent">
                       <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h4  style="color:#3cca7e; font-weight: 900; text-align: center;">PERSONAL INFORMATION</h4>
-                        <img style="border-radius: 50px"  src="<?php echo $data2['profileImage']?>" width="100" height="100" alt="Profibild" />
+                        <img style="border-radius: 50px"  src="../<?php echo $data2['profileImage']?>" width="100" height="100" alt="Profibild" />
                         <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="edit"  data-modal="modalOne" id="edit"  style="font-size: 14px; color: #484d4ac0; float:right;"><i class="bi bi-pencil" style="color: #484d4ac0; font-size: 1.5em; "></i></a>
                         <div class="name" style="padding-top:20px;font-weight:bold"><?php echo  empty($data2['full-name']) ?   " " : $data2['full-name'] ?></div>
                         <div class="email"><i style="font-size: 16px;color:#3cca7e; font-weight:900; padding-right: 10px" class="bi bi-envelope-fill"></i><?php echo $data['email'] ?></div>
@@ -189,7 +190,7 @@
                         <form style="padding:25px; margin:25px;box-shadow:0 2px 5px #f5f5f5;" action="add.php" method="post" enctype="multipart/form-data" >
                         <h5 class="modal-title" style="color:#3cca7e; font-weight: 900; text-align: center;" id="exampleModalLabel">Edit Profile</h5>
                             <div class="profilepic" onclick="triggerClicl()">
-                                <img onclick="triggerClick()" id="profileDisplay"  class="profilepic__image" src="<?php echo $data2['profileImage']?>" width="250" height="250" alt="Profibild" />
+                                <img onclick="triggerClick()" id="profileDisplay"  class="profilepic__image" src="../<?php echo $data2['profileImage']?>" width="250" height="250" alt="Profibild" />
                                 <div class="profilepic__content">
                                   <span class="profilepic__icon"><i class="fas fa-camera"></i></span>
                                   <input type="file" id="profileImage" name="profileImage" onchange="displayImage(this)" class="profilepic__input"><span class="profilepic__text">Edit Profile</span>

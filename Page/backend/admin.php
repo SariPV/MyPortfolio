@@ -20,7 +20,7 @@ require('config.php');
         <!--==================== CSS ====================-->
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../index.css">
         
         
         <title>Responsive Portfolio Website</title>
@@ -42,7 +42,7 @@ require('config.php');
                             <a href="index2.php#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./signUp.html"  name= "signOut" class="button">Log out</a>
+                            <a href="../signUp.html"  name= "signOut" class="button">Log out</a>
                         </li>
                         
       
@@ -100,7 +100,7 @@ require('config.php');
 
                         <div class="templateImage">
                          <span class="middle" style="font-size:20px; float:right;"><a href="JavaScript:if(confirm('Confirm Delete?')==true){window.location='deleteTemp.php?TMPID=<?php echo $row["id"];?>';}"    name="delete" id="removeTemp" style="font-size: 14px; color: #484d4ac0;"><i class="bi bi-x-circle-fill" style="color: #D0312D; font-size: 1.5em;"></i></a></span>
-                      <a href="<?php echo $row['templates'] ?>"><img src="<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
+                      <a href="<?php echo $row['templates'] ?>"><img src="../<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
                       <!-- <div class="middle">
                       <div class="text">Preview</div>
                       </div> -->
@@ -139,7 +139,7 @@ require('config.php');
 
                       <div class="templateImage">
                       <span class="middle" style="font-size:20px; float:right;"><a href="JavaScript:if(confirm('Confirm Delete?')==true){window.location='deleteTemp.php?TMPID=<?php echo $row["id"];?>';}"    name="delete" id="removeTemp" style="font-size: 14px; color: #484d4ac0;"><i class="bi bi-x-circle-fill" style="color: #D0312D; font-size: 1.5em;"></i></a></span>
-                      <a href="<?php echo $row['templates'] ?>"><img src="<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
+                      <a href="<?php echo $row['templates'] ?>"><img src="../<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
                       <!-- <div class="middle">
                       <div class="text">Preview</div>
                       </div> -->
@@ -168,7 +168,7 @@ require('config.php');
 
                       <div class="templateImage">
                       <span class="middle" style="font-size:20px; float:right;"><a href="JavaScript:if(confirm('Confirm Delete?')==true){window.location='deleteTemp.php?TMPID=<?php echo $row["id"];?>';}"    name="delete" id="removeTemp" style="font-size: 14px; color: #484d4ac0;"><i class="bi bi-x-circle-fill" style="color: #D0312D; font-size: 1.5em;"></i></a></span>
-                      <a href="<?php echo $row['templates'] ?>"><img src="<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
+                      <a href="<?php echo $row['templates'] ?>"><img src="../<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
                       <!-- <div class="middle">
                       <div class="text">Preview</div>
                       </div> -->
@@ -197,7 +197,7 @@ require('config.php');
 
                       <div class="templateImage">
                       <span class="middle" style="font-size:20px; float:right;"><a href="JavaScript:if(confirm('Confirm Delete?')==true){window.location='deleteTemp.php?TMPID=<?php echo $row["id"];?>';}"    name="delete" id="removeTemp" style="font-size: 14px; color: #484d4ac0;"><i class="bi bi-x-circle-fill" style="color: #D0312D; font-size: 1.5em;"></i></a></span>
-                      <a href="<?php echo $row['templates'] ?>"><img src="<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
+                      <a href="<?php echo $row['templates'] ?>"><img src="../<?php echo $row['templateImage'] ?>"  alt="" class="pro_img img" style="width: 400px;"/></a>
                       <!-- <div class="middle">
                       <div class="text">Preview</div>
                       </div> -->
@@ -213,7 +213,7 @@ require('config.php');
             </section>
             </body>
             <!--==================== MAIN JS ====================--> 
-        <script src="index.js"></script>
+        <script src="../index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

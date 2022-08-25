@@ -1,11 +1,12 @@
 <?php
-require('../config.php');
+require('../backend/config.php');
 require_once __DIR__ . '/vendor/autoload.php' ;
 
 session_start();
 if(!isset($_SESSION['userLogin']))
 	{
-		echo "Please Login!";
+		// echo "Please Login!";
+        header("location:../login.html"); 
 		exit();
 	}else{
     //  $query = "SELECT 'role' from user_account where id ='".$_SESSION['userLogin']."'";
@@ -15,8 +16,7 @@ if(!isset($_SESSION['userLogin']))
      // "SELECT id from user_account where email ='".$_SESSION['id']."'";
      // header("location:index.php");
     }else{
-      header("location:admin.php");  
-    }
+        header("location:../backend/admin.php");      }
     
   }
 //echo 'hello';

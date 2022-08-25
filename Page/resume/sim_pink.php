@@ -1,11 +1,12 @@
 <?php
-require('config.php');
+require('../backend/config.php');
 require_once __DIR__ . '/vendor/autoload.php' ;
 
 session_start();
 if(!isset($_SESSION['userLogin']))
 	{
-		echo "Please Login!";
+		// echo "Please Login!";
+        header("location:../login.html"); 
 		exit();
 	}else{
     //  $query = "SELECT 'role' from user_account where id ='".$_SESSION['userLogin']."'";
@@ -15,8 +16,7 @@ if(!isset($_SESSION['userLogin']))
      // "SELECT id from user_account where email ='".$_SESSION['id']."'";
      // header("location:index.php");
     }else{
-      header("location:admin.php");  
-    }
+        header("location:../backend/admin.php");      }
     
   }
 //echo 'hello';
@@ -25,7 +25,7 @@ if(!isset($_SESSION['userLogin']))
 $query ="SELECT * FROM user_profile,user_account WHERE user_account.id=$temp_userid AND user_profile.userid=$temp_userid";
 //$education = "SELECT * FROM portfolio WHERE portfolio.userid=$temp_userid";
 //    $data =  mysqli_query($link,$education);
-$result = mysqli_query($links,$query);
+$result = mysqli_query($link,$query);
 $education ="SELECT * FROM education WHERE userid=$temp_userid";
 
 if (!$result)
@@ -99,7 +99,7 @@ $original_text = str_replace("{email}",$email,$original_text);
 $original_text = str_replace("{address}",$address,$original_text);
 $original_text = str_replace("{MyImage}",$MyImage,$original_text);
 $i = 0;
-$results = mysqli_query($links,$education);
+$results = mysqli_query($link,$education);
 $substr = "";
 while(($education_list = mysqli_fetch_array($results))>$i){
   
@@ -124,7 +124,7 @@ while(($education_list = mysqli_fetch_array($results))>$i){
 }
 
 $exp ="SELECT * FROM experience WHERE userid=$temp_userid";
-$exp_results = mysqli_query($links,$exp);
+$exp_results = mysqli_query($link,$exp);
 $expe = 0;
 $exstr = '';
 while(($experience = mysqli_fetch_array($exp_results))>$expe){
@@ -152,7 +152,7 @@ $expe += 1;
 }
 
 $ach ="SELECT * FROM achievement WHERE userid=$temp_userid";
-$ach_results = mysqli_query($links,$ach);
+$ach_results = mysqli_query($link,$ach);
 $achi = 0;
 $achstr = '';
 while(($achievement = mysqli_fetch_array($ach_results))>=$achi){
@@ -175,7 +175,7 @@ $achi += 1;
 }
 
 $skill_query ="SELECT * FROM skill WHERE userid=$temp_userid";
-$skill_results = mysqli_query($links,$skill_query);
+$skill_results = mysqli_query($link,$skill_query);
 $count = 0;
 $skillstr = '';
 while(($skill = mysqli_fetch_array($skill_results))>=$count){
@@ -191,7 +191,7 @@ $count += 1;
 }
 
 $ref_query ="SELECT * FROM reference WHERE userid=$temp_userid";
-$ref_results = mysqli_query($links,$ref_query);
+$ref_results = mysqli_query($link,$ref_query);
 $countref = 0;
 $refstr = '';
 while(($ref = mysqli_fetch_array($ref_results))>=$countref){

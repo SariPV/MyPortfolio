@@ -11,7 +11,7 @@ $login_session = $row['email'];
 
 if (!isset($login_session)){
     
-    header('location: ./index.html');
+    header('location: ../index.html');
 
 }
 ?>
