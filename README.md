@@ -29,5 +29,6 @@ MyPortfolio web application is related to online resume building web application
 ![TEMPLATELIST2](https://user-images.githubusercontent.com/86040772/186691517-aa255bb6-65c8-4bc8-ba55-45d669ef168d.PNG)
 
 # How to install?
+> git clone https://github.com/SariPV/MyPortfolio.git
 
-git clone 
+after clone the files open with xampp htdocs folder
